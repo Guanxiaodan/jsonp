@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jsonp2极简</title>
+</head>
+<body>
+<p id="test-jsonp"></p>
+<script>
+  // 函数refreshPrice对应src后面的回调函数
+  // 查看浏览器控制台
+  function refreshPrice(data) {
+    console.log(data);
+  }
+
+</script>
+
+</body>
+<script src="http://api.money.126.net/data/feed/0000001,1399001?callback=refreshPrice"></script>
+</html>
